@@ -1,0 +1,98 @@
+.navbar-brand {
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  border-radius: 50px;
+  font-weight: bold;
+  border-color: white;
+  border: solid;
+}
+
+.body {
+  background-color: lightblue;
+}
+
+.navbar-custom {
+  background-color: blue;
+  border: solid;
+  border-color: darkblue;
+}
+
+.nav-link {
+  color: white;
+}
+
+.btn {
+    background-color: darkblue;
+    color: white;
+    border-color: white;
+    border: solid;
+    font-weight: bold;
+}
+
+.btn:hover {
+  background-color: cornflowerblue;
+  border-color: white;
+}
+
+.jumbo_pic {
+  height: 450px;
+  width: 100%;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+.logo-footer {
+  height: 40px;
+  width: 40px;
+}
+
+.footer {
+  color: white;
+  background-color: blue;
+  border-radius: 50px;
+  border-color: white;
+  border: solid;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+transform: translateX(0);
+}
